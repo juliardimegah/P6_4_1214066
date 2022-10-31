@@ -48,6 +48,7 @@
             this.epInfo = new System.Windows.Forms.ErrorProvider(this.components);
             this.txtNickname = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.buttonTampilkan = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.epWrong)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.epCorrect)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.epWarning)).BeginInit();
@@ -165,7 +166,7 @@
             // 
             // tutup
             // 
-            this.tutup.Location = new System.Drawing.Point(194, 230);
+            this.tutup.Location = new System.Drawing.Point(164, 230);
             this.tutup.Name = "tutup";
             this.tutup.Size = new System.Drawing.Size(75, 23);
             this.tutup.TabIndex = 16;
@@ -195,11 +196,22 @@
             this.label1.TabIndex = 17;
             this.label1.Text = "Nama Panggilan (dalam format lowercase)";
             // 
+            // buttonTampilkan
+            // 
+            this.buttonTampilkan.Location = new System.Drawing.Point(245, 230);
+            this.buttonTampilkan.Name = "buttonTampilkan";
+            this.buttonTampilkan.Size = new System.Drawing.Size(75, 23);
+            this.buttonTampilkan.TabIndex = 19;
+            this.buttonTampilkan.Text = "T&ampilkan";
+            this.buttonTampilkan.UseVisualStyleBackColor = true;
+            this.buttonTampilkan.Click += new System.EventHandler(this.buttonTampilkan_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(484, 261);
+            this.Controls.Add(this.buttonTampilkan);
             this.Controls.Add(this.txtNickname);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.tutup);
@@ -245,6 +257,7 @@
         private System.Windows.Forms.ErrorProvider epInfo;
         private System.Windows.Forms.TextBox txtNickname;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button buttonTampilkan;
     }
 }
 

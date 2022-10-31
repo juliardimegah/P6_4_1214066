@@ -263,5 +263,19 @@ namespace P6_4_1214066
                 }
             }
         }
+
+        private void buttonTampilkan_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show
+                    ("Nama : " + txtNama.Text +
+                    "\nNo. Telp: " + txtTelpon.Text +
+                    "\nEmail: " + txtEmail.Text +
+                    "\nNama Panggilan: " + txtNickname.Text+
+                    "\nAngka 1: " + txtAngka1.Text+
+                    "\nAngka 2: " + txtAngka2.Text,
+                    "Terima kasih telah menggunakan aplikasi kami",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+        }
     }
 }
